@@ -61,7 +61,7 @@ public class PostedTaskDetails extends Fragment {
         int[] rating={4};
         String[] time={"4 hrs ago"};
         String[] comment={"COmment 1"};
-        int[] dp={R.drawable.ic_launcher_background};
+        int[] dp={R.drawable.melogo};
         boolean[] email={true};
         boolean[] phone={true};
         boolean[] cnic={true};

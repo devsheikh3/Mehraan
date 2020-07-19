@@ -144,7 +144,7 @@ public class TaskDetails extends Fragment {
         int[] rating={4,3,0};
         String[] time={"4 hrs ago","6 hrs ago","20 hrs ago"};
         String[] comment={"COmment 1","Comment 2","Comment 3"};
-        int[] dp={R.drawable.ic_launcher_background,R.drawable.ic_launcher_background,R.drawable.ic_launcher_background,R.drawable.ic_launcher_background,R.drawable.ic_launcher_background,R.drawable.ic_launcher_background,R.drawable.ic_launcher_background};
+        int[] dp={R.drawable.melogo,R.drawable.melogo,R.drawable.melogo};
         boolean[] email={true,false,false};
         boolean[] phone={true,true,true};
         boolean[] cnic={true,false,true};

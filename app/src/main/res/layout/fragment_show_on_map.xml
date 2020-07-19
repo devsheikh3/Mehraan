@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Skills">
-
+    tools:context=".ShowOnMap">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -39,59 +38,14 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <fragment
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline37">
-
-    <EditText
-        android:layout_margin="5dp"
-        android:id="@+id/skillslistid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/view7"
-        android:layout_marginVertical="5dp"
-        android:background="@drawable/edit_text_back"
-        android:gravity="center_vertical"
-        android:hint="Email Address"
-        android:lines="1"
-        android:paddingHorizontal="30dp"
-        android:paddingVertical="15dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textCursorDrawable="@null"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/addskillbtnid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/skillslistid"
-        android:layout_alignBottom="@+id/skillslistid"
-        android:layout_alignRight="@+id/skillslistid"
-        android:layout_margin="5dp"
-        android:layout_below="@+id/profilechangepassid"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorWhite"
-        android:text="Add"
-        android:background="@drawable/button_back"
-        />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_marginTop="50dp"
-            android:layout_marginHorizontal="10dp"
-            android:padding="5dp"
-            android:id="@+id/skilllistid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_back"
-            android:layout_below="@+id/addskillbtnid"
-            />
-
-    </RelativeLayout>
+        app:layout_constraintTop_toTopOf="@+id/guideline37" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline37"
@@ -99,5 +53,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.07" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

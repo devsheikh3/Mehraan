@@ -55,7 +55,7 @@
             android:layout_height="200dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/melogo"
             app:civ_border_color="@color/colorPrimary"
             app:civ_border_width="5dp" />
 
@@ -178,8 +178,8 @@
             android:id="@+id/updatebtnid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/profilechangepassid"
+            android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
             android:textColor="@color/colorWhite"
             android:text="Update"

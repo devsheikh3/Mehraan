@@ -25,7 +25,6 @@ public class PostedTaskDetails extends Fragment {
     TextView myopen, myassigned, mycompleted, myreviewed, mytaskname, mypostername, mytasklocation, mypostime, myshowonmap, mytaskdate, mytaskdetails;
     EditText mywritecomment;
     ImageView mysendbtn, mybackbtn;
-    Button changestatust;
     CircleImageView myposterimage;
 
     @Override
@@ -47,10 +46,8 @@ public class PostedTaskDetails extends Fragment {
         mywritecomment=view.findViewById(R.id.mytypecommentid);
         mysendbtn=view.findViewById(R.id.mysendbtnid);
         mybackbtn=view.findViewById(R.id.backmytaskid);
-        changestatust=view.findViewById(R.id.changestatusbtnid);
         myofferlist=view.findViewById(R.id.myofferlistid);
         mycommentslist=view.findViewById(R.id.mycommentslistid);
-
         myofferlist.setLayoutManager(new LinearLayoutManager(getContext()));
         mycommentslist.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -77,6 +74,18 @@ public class PostedTaskDetails extends Fragment {
 
                 Intent intent=new Intent(getContext(),Details.class);
                 intent.putExtra("back",2);
+                startActivity(intent);
+
+            }
+        });
+
+        myshowonmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(getContext(),Details.class);
+                intent.putExtra("next",10);
+                intent.putExtra("map",2);
                 startActivity(intent);
 
             }

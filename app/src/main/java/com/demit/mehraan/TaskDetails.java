@@ -33,12 +33,6 @@ public class TaskDetails extends Fragment {
     ImageView sendbtn, backbtn;
     Button makeoffer;
     CircleImageView posterimage;
-    int a;
-
-    public TaskDetails(int a) {
-    this.a=a;
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -130,6 +124,10 @@ public class TaskDetails extends Fragment {
             @Override
             public void onClick(View v) {
 
+                Intent intent=new Intent(getContext(),Details.class);
+                intent.putExtra("next",10);
+                intent.putExtra("map",1);
+                startActivity(intent);
             }
         });
 
@@ -150,15 +148,9 @@ public class TaskDetails extends Fragment {
         boolean[] cnic={true,false,true};
         boolean[] payment={false,false,false};
 
-        if (a==1){
+
             offerlist.setAdapter(new OfferAdapter(name,dp,time,rating,review,email,phone,payment,cnic));
-        }
-
-        else if (a==2){
-            offerlist.setAdapter(new MyOfferAdapter(name,review,time,rating,dp,email,phone,payment,cnic));
-        }
-
-        commentslist.setAdapter(new CommentsAdapter(comment, time, name,dp));
+            commentslist.setAdapter(new CommentsAdapter(comment, time, name,dp));
 
 
 

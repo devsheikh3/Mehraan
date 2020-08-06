@@ -16,6 +16,9 @@
         <item name="android:background">@color/colorAccent</item>
     </style>
 
+    <style name="AlertDialogueTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
 
     
 </resources>

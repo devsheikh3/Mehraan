@@ -68,25 +68,17 @@ public class EarnMoneyAdapter extends RecyclerView.Adapter<EarnMoneyAdapter.Earn
             @Override
             public void onClick(View v) {
 
-                //if earn money
-               Intent intent=new Intent(v.getContext(),Details.class);
-               intent.putExtra("next",1);
-               intent.putExtra("a", a);
+               if(a==1){
+                   Intent intent=new Intent(v.getContext(),Details.class);
+                   intent.putExtra("next",1);
+                   v.getContext().startActivity(intent);
+               }
 
-               v.getContext().startActivity(intent);
-
-               /*
-                elseif( Posted tasks )
-                Intent intent=new Intent(v.getContext(),Details.class);
-                intent.putExtra("next",2);
-                v.getContext().startActivity(intent);
-
-                elseif( Assigned tasks )
-
-                Intent intent=new Intent(v.getContext(),Details.class);
-                intent.putExtra("next",2);
-                v.getContext().startActivity(intent);
-                */
+                else if(a==2){
+                    Intent intent=new Intent(v.getContext(),Details.class);
+                    intent.putExtra("next",2);
+                    v.getContext().startActivity(intent);
+                }
 
             }
         });

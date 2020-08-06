@@ -310,47 +310,14 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/mybudgetid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/myduedateid"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="20dp"
-                android:background="@drawable/edit_text_back">
 
-                <TextView
-                    android:id="@+id/mytxttttt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="Change Task Status"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/changestatusbtnid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/mytxttttt"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20sp"
-                    android:background="@drawable/button_back"
-                    android:paddingHorizontal="10dp"
-                    android:text="Open"
-                    android:textColor="@color/colorWhite" />
-
-            </RelativeLayout>
 
             <TextView
+                android:layout_marginTop="20dp"
                 android:id="@+id/mytxtxttxtx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/mybudgetid"
+                android:layout_below="@id/myduedateid"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginBottom="10dp"
                 android:text="Task Details"
